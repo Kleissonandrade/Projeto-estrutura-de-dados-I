@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.LinkedList;
+
 
 public class Database{
-  private static ArrayList<Course> courses;
+  private static LinkedList<Course> courses;
   private static ArrayList<Studant> studants;
   private static Hashtable<Integer, User> users;
   private static Hashtable<Integer, Classroom> classes;
@@ -11,7 +13,7 @@ public class Database{
 
 
   public Database(){
-     courses = new ArrayList<Course>();
+     courses = new LinkedList<Course>();
      users = new Hashtable<Integer, User>();
      studants = new ArrayList<Studant>();
      classes = new Hashtable<Integer, Classroom>();
@@ -27,8 +29,8 @@ public class Database{
     courses.add(course);
   }
 
-  public ArrayList<Course> listCourses(){
-    ArrayList<Course> coursesList = new ArrayList<Course>();
+  public LinkedList<Course> listCourses(){
+    LinkedList<Course> coursesList = new LinkedList<Course>();
     for(int i=0; i < courses.size(); i++ ){
       coursesList.add(courses.get(i));
     }

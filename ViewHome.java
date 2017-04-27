@@ -23,9 +23,10 @@ public class ViewHome extends JFrame{
     }
 
   private void initializeComponents(){
-    labelTitle = new JLabel("Sistema Academico");
+    labelTitle = new JLabel("Sistema Acadêmico");
     newStudant = new JButton("Novo Aluno");
     newTeacher = new JButton("Novo Prof.");
+    //newAdmin = new JButton("Novo Admin");
     newClass = new JButton("Nova Turma");
     list = new JButton("Listar");
     removeStudant = new JButton("Excluir Aluno");
@@ -46,6 +47,7 @@ public class ViewHome extends JFrame{
     getContentPane().add(labelTitle);
     labelTitle.setBounds(360, 20, 315, 54);
 
+    //newStudant.setBackground(Color.blue);
     newStudant.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
     newStudant.setOpaque(true);
 
@@ -57,7 +59,8 @@ public class ViewHome extends JFrame{
 
     getContentPane().add(newStudant);
     newStudant.setBounds(100, 150, 120, 83);
-  
+
+    //newTeacher.setBackground(Color.blue);
     newTeacher.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     newTeacher.setOpaque(true);
 

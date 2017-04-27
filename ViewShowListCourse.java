@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
+import java.util.LinkedList;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
@@ -8,12 +9,12 @@ public class ViewShowListCourse extends JFrame{
 
   private JTable table;
   private JScrollPane scroll;
-  private ArrayList<Course> courses;
+  private LinkedList<Course> courses;
 
   Database database = Database.getInstance();
 
    public ViewShowListCourse() {
-     courses = new ArrayList<Course>();
+     courses = new LinkedList<Course>();
      courses = database.listCourses();
      initializeComponents();
   }

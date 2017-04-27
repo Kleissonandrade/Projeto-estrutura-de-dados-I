@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
+import java.util.LinkedList;
 import java.util.ArrayList;
 
 public class ViewShowCourse extends JFrame{
@@ -17,7 +18,6 @@ public class ViewShowCourse extends JFrame{
 
   private JButton buttonNewDiscipline;
   private JButton buttonRemoveDiscipline;
-  private JButton buttonList;
   private JButton buttonReturn;
   private JButton buttonCancelar;
   private Course course;
@@ -107,17 +107,6 @@ public class ViewShowCourse extends JFrame{
        }
      });
 
-     buttonList = new JButton("Listar Disciplinas");
-     buttonList.setFont(new Font("Ubuntu", 0, 18));
-     getContentPane().add(buttonList);
-     buttonList.setBounds(430, 290, 160, 50);
-
-     buttonList.addActionListener(new ActionListener(){
-       public void actionPerformed(ActionEvent e){
-         buttonListAction();
-       }
-     });
-
      buttonRemoveDiscipline = new JButton("Remover Disciplina");
      buttonRemoveDiscipline.setFont(new Font("Ubuntu", 0, 18));
      getContentPane().add(buttonRemoveDiscipline);
@@ -145,11 +134,6 @@ public class ViewShowCourse extends JFrame{
     viewRemoveDiscipline.setSize(1057, 562);
   }
 
-  public void buttonListAction(){
-    ViewShowListDisciplines viewShowListDisciplines = new ViewShowListDisciplines(this.course);
-    viewShowListDisciplines.setVisible(true);
-    viewShowListDisciplines.setSize(1057, 562);
-  }
 
   public void buttonReturnAction(){
     ViewSurchCourse viewSurchCourse = new ViewSurchCourse();

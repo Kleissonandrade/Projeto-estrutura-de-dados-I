@@ -71,7 +71,7 @@ public class ViewRemoveStudant extends JFrame{
   public void buttonRemoveAction(){
     Database database = Database.getInstance();
     try{
-      database.removeStudant(textSurchRegisterAction());
+      database.removeUser(textSurchRegisterAction());
     }catch(NumberFormatException e){
       JOptionPane.showMessageDialog(null, "Insira a matricula!");
     }catch(NullPointerException e){
