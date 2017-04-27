@@ -31,12 +31,12 @@ public class ViewRemoveCourse extends JFrame{
 
     labelSurch = new JLabel("Curso:");
     getContentPane().add(labelSurch);
-    labelSurch.setBounds(70, 160, 120, 21);
+    labelSurch.setBounds(70, 210, 120, 21);
 
     
 
     textSurchCourse = new JTextField();
-    textSurchCourse.setBounds(70, 210, 60, 28);
+    textSurchCourse.setBounds(130, 210, 300, 28);
 	getContentPane().add(textSurchCourse);
 	
     textSurchCourse.addActionListener(new ActionListener(){
@@ -49,7 +49,7 @@ public class ViewRemoveCourse extends JFrame{
      buttonRemove = new JButton("Remover");
      buttonRemove.setFont(new Font("Ubuntu", 0, 18));
      getContentPane().add(buttonRemove);
-     buttonRemove.setBounds(200, 280, 140, 50);
+     buttonRemove.setBounds(275, 280, 140, 50);
 
      buttonRemove.addActionListener(new ActionListener(){
        public void actionPerformed(ActionEvent e){

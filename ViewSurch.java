@@ -29,7 +29,7 @@ public class ViewSurch extends JFrame{
      buttonStudant = new JButton("Aluno");
      buttonStudant.setFont(new Font("Ubuntu", 0, 18));
      getContentPane().add(buttonStudant);
-     buttonStudant.setBounds(50, 140, 170, 50);
+     buttonStudant.setBounds(170, 140, 170, 50);
 
      buttonStudant.addActionListener(new ActionListener(){
        public void actionPerformed(ActionEvent e){
@@ -40,7 +40,7 @@ public class ViewSurch extends JFrame{
      buttonTeacher = new JButton("Professor");
      buttonTeacher.setFont(new Font("Ubuntu", 0, 18));
      getContentPane().add(buttonTeacher);
-     buttonTeacher.setBounds(230, 140, 170, 50);
+     buttonTeacher.setBounds(350, 140, 170, 50);
 
      buttonTeacher.addActionListener(new ActionListener(){
        public void actionPerformed(ActionEvent e){
@@ -48,21 +48,10 @@ public class ViewSurch extends JFrame{
        }
      });
 
-     /*buttonAdmin = new JButton("Administrador");
-     buttonAdmin.setFont(new Font("Ubuntu", 0, 18));
-     getContentPane().add(buttonAdmin);
-     buttonAdmin.setBounds(410, 140, 170, 50);
-
-     buttonAdmin.addActionListener(new ActionListener(){
-       public void actionPerformed(ActionEvent e){
-         buttonAdminAction();
-       }
-     });*/
-
      buttonClass = new JButton("Turma");
      buttonClass.setFont(new Font("Ubuntu", 0, 18));
      getContentPane().add(buttonClass);
-     buttonClass.setBounds(590, 140, 170, 50);
+     buttonClass.setBounds(530, 140, 170, 50);
 
      buttonClass.addActionListener(new ActionListener(){
        public void actionPerformed(ActionEvent e){
@@ -73,7 +62,7 @@ public class ViewSurch extends JFrame{
      buttonCourse = new JButton("Curso");
      buttonCourse.setFont(new Font("Ubuntu", 0, 18));
      getContentPane().add(buttonCourse);
-     buttonCourse.setBounds(770, 140, 170, 50);
+     buttonCourse.setBounds(710, 140, 170, 50);
 
      buttonCourse.addActionListener(new ActionListener(){
        public void actionPerformed(ActionEvent e){

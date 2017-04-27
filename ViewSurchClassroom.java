@@ -27,7 +27,7 @@ public class ViewSurchClassroom extends JFrame{
     title.setBounds(460, 26, 225, 58);
     title.setFont(new Font("Ubuntu", 0, 36));
 
-    labelCod = new JLabel("Código: ");
+    labelCod = new JLabel("Codigo: ");
     getContentPane().add(labelCod);
     labelCod.setBounds(70, 190, 130, 21);
 

@@ -23,10 +23,9 @@ public class ViewHome extends JFrame{
     }
 
   private void initializeComponents(){
-    labelTitle = new JLabel("Sistema Acadêmico");
+    labelTitle = new JLabel("Sistema Academico");
     newStudant = new JButton("Novo Aluno");
     newTeacher = new JButton("Novo Prof.");
-    //newAdmin = new JButton("Novo Admin");
     newClass = new JButton("Nova Turma");
     list = new JButton("Listar");
     removeStudant = new JButton("Excluir Aluno");
@@ -47,7 +46,6 @@ public class ViewHome extends JFrame{
     getContentPane().add(labelTitle);
     labelTitle.setBounds(360, 20, 315, 54);
 
-    //newStudant.setBackground(Color.blue);
     newStudant.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
     newStudant.setOpaque(true);
 
@@ -59,8 +57,7 @@ public class ViewHome extends JFrame{
 
     getContentPane().add(newStudant);
     newStudant.setBounds(100, 150, 120, 83);
-
-    //newTeacher.setBackground(Color.blue);
+  
     newTeacher.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     newTeacher.setOpaque(true);
 
@@ -97,7 +94,7 @@ public class ViewHome extends JFrame{
     });
 
     getContentPane().add(newCourse);
-    newCourse.setBounds(620, 150, 120, 83);
+    newCourse.setBounds(498, 150, 120, 83);
 
     surch.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     surch.setOpaque(true);
@@ -109,7 +106,7 @@ public class ViewHome extends JFrame{
     });
 
     getContentPane().add(surch);
-    surch.setBounds(750, 150, 120, 83);
+    surch.setBounds(628, 150, 120, 83);
 
     list.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     list.setOpaque(true);
@@ -121,9 +118,8 @@ public class ViewHome extends JFrame{
     });
 
     getContentPane().add(list);
-    list.setBounds(880, 150, 120, 83);
+    list.setBounds(758, 150, 120, 83);
 
-    //removeStudant.setBackground(Color.red);
     removeStudant.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     removeStudant.setOpaque(true);
 
@@ -136,7 +132,6 @@ public class ViewHome extends JFrame{
     getContentPane().add(removeStudant);
     removeStudant.setBounds(100, 250, 120, 83);
 
-    //removeTeacher.setBackground(Color.red);
     removeTeacher.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     removeTeacher.setOpaque(true);
 
@@ -148,21 +143,7 @@ public class ViewHome extends JFrame{
 
     getContentPane().add(removeTeacher);
     removeTeacher.setBounds(230, 250, 120, 83);
-
-    //removeAdmin.setBackground(Color.red);
-    /*removeAdmin.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-    removeAdmin.setOpaque(true);
-
-    removeAdmin.addActionListener(new ActionListener(){
-      public void actionPerformed(ActionEvent e){
-        removeAdminAction(e);
-      }
-    });
-
-    getContentPane().add(removeAdmin);
-    removeAdmin.setBounds(360, 250, 120, 83);*/
-
-    //removeClass.setBackground(Color.red);
+    
     removeClass.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     removeClass.setOpaque(true);
 
@@ -173,9 +154,8 @@ public class ViewHome extends JFrame{
     });
 
     getContentPane().add(removeClass);
-    removeClass.setBounds(490, 250, 120, 83);
+    removeClass.setBounds(368, 250, 120, 83);
 
-    //removeCourse.setBackground(Color.red);
     removeCourse.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     removeCourse.setOpaque(true);
 
@@ -186,7 +166,7 @@ public class ViewHome extends JFrame{
     });
 
     getContentPane().add(removeCourse);
-    removeCourse.setBounds(620, 250, 120, 83);
+    removeCourse.setBounds(498, 250, 120, 83);
 
     close.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
     close.setOpaque(true);
@@ -198,7 +178,7 @@ public class ViewHome extends JFrame{
     });
 
     getContentPane().add(close);
-    close.setBounds(750, 250, 120, 83);
+    close.setBounds(628, 250, 120, 83);
 
     pack();
   }

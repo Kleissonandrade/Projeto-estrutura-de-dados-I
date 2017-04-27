@@ -30,7 +30,7 @@ public class ViewSurchCourse extends JFrame{
 
     labelSurch = new JLabel("Curso:");
     getContentPane().add(labelSurch);
-    labelSurch.setBounds(70, 160, 120, 21);
+    labelSurch.setBounds(70, 210, 120, 21);
 
     textSurchCourse = new JTextField();
     textSurchCourse.setBounds(130, 210, 360, 28);
